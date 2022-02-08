@@ -35,7 +35,7 @@ class MainController: UIViewController {
             make.right.left.equalToSuperview()
             make.height.equalTo((self.view.frame.width / 4.0) * 5)
         }
-        buttonsLayout.createButtonLayouts(cornerRadius: ((self.view.frame.width / 4.0)))
+        buttonsLayout.createButtonLayouts(cornerRadius: ((self.view.frame.width / 4.0) - 8))
         
         view.addSubview(resultLabel)
         resultLabel.snp.makeConstraints { make in
